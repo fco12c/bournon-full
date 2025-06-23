@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOURBON - Servicios de Mixología</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Pantalla de carga -->
+  <div class="loader-wrapper">
+    <img src="img/logo.png" alt="Cargando BOU" class="loader-logo" />
+  </div>
+
+  <!-- Sección 1: Presentación -->
+  <section class="hero seccion-scroll">
+    <video autoplay muted loop playsinline class="video-fondo">
+      <source src="img/video_fondo.mp4" type="video/mp4">
+    </video>
+    <div class="overlay dark-bg">
+      <img src="img/logo.png" alt="BOU Logo" class="logo-hero animate-logo" data-aos="zoom-in">
+      <!--<h1 data-aos="fade-down">BOU</h1>-->
+      <p data-aos="fade-up">Mixología Premium para tus eventos</p>
+      <a href="#" class="btn" data-aos="zoom-in">Ver Servicios</a>
+    </div>
+  </section>
+
+  <!-- Sección Nosotros -->
+  <section id="nosotros" class="seccion-scroll srvcbg">
+    <div class="nosotros-content">
+      <div class="nosotros-text" data-aos="fade-down">
+        <h2>Nosotros</h2>
+        <p>
+          Nos presentamos en los mejores eventos, aumentando la diversión con la versatilidad de nuestras bebidas especiales.
+          Haz tu evento social uno de los mejores, para ello estamos aquí. 
+          <strong>Tú preocúpate por divertirte, que nosotros te servimos</strong>.
+        </p>
+        <a href="#" class="btn">Cotiza Ahora</a>
+      </div>
+      <div class="nosotros-image">
+        <img src="img/bkgbour.jpeg" alt="Imagen de nosotros" data-aos="zoom-in">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 2: Servicios -->
+  <section class="seccion-scroll srvcbg">
+    <div class="servicio">
+      <div class="imagen" data-aos="fade-right">
+        <img src="img/bg1.jpg" alt="Coctelería de Autor">
+      </div>
+      <div class="texto" data-aos="fade-left">
+        <h2>Coctelería de Autor</h2>
+        <p>Bebidas únicas creadas especialmente para tu evento, con ingredientes seleccionados y presentaciones sofisticadas.</p>
+        <a href="#" class="btn">Cotizar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion-scroll srvcbg">
+    <div class="servicio impar">
+      <div class="imagen" data-aos="fade-left">
+        <img src="img/bg2.jpg" alt="Barras Móviles">
+      </div>
+      <div class="texto" data-aos="fade-right">
+        <h2>Barras Móviles</h2>
+        <p>Contamos con barras equipadas para cualquier espacio. Nos adaptamos al estilo de tu evento para brindar una experiencia premium.</p>
+        <a href="#" class="btn">Cotizar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Galería en Pantalla Completa -->
+  <section class="seccion-scroll srvcbg fullscreen-gallery">
+    <h2 class="gallery-header" data-aos="fade-up">Nuestra Presencia en Eventos</h2>
+    <div class="main-image-container" data-aos="fade-up">
+      <img id="mainImage" src="img/copas.jpg" alt="Imagen destacada">
+    </div>
+    <div class="thumbnails">
+      <img src="img/copas.jpg" alt="Miniatura 1" data-index="0">
+      <img src="img/bar.jpg" alt="Miniatura 2" data-index="1">
+      <img src="img/prep.jpg" alt="Miniatura 3" data-index="2">
+      <img src="img/shots2.jpg" alt="Miniatura 4" data-index="3">
+      <!-- Agrega todas las que necesites -->
+    </div>
+  </section>
+
+  <!-- Sección de Precios -->
+  <section id="precios" class="seccion-scroll srvcbg">
+    <div class="precios-cards-content" data-aos="fade-down">
+      <h2>Servicios y Precios</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Mixología Básica</h3>
+          <p>Coctelería estándar para tu evento</p>
+          <span class="price">$2,000</span>
+        </div>
+        <div class="card">
+          <h3>Mixología Premium</h3>
+          <p>Coctelería artesanal y personalizada</p>
+          <span class="price">$3,500</span>
+        </div>
+        <div class="card">
+          <h3>Bar para Eventos</h3>
+          <p>Bar completo para toda la duración del evento</p>
+          <span class="price">$5,000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Disponibilidad -->
+  <section id="disponibilidad" class="seccion-scroll srvcbg">
+    <div class="disponibilidad-content" data-aos="fade-down">
+      <h2>Nuestra Disponibilidad</h2>
+      <div class="calendar-wrapper">
+        <iframe 
+          src="https://calendar.google.com/calendar/embed?src=TU_CALENDAR_ID&ctz=America%2FMexico_City&mode=WEEK" 
+          style="border:0;" 
+          frameborder="0" 
+          scrolling="no">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección 3: Contacto 
+  <section class="seccion-scroll srvcbg">
+    <h2>Contáctanos</h2>
+    <p>Agenda una cita o escríbenos por WhatsApp.</p>
+    <a href="https://wa.me/521234567890" class="btn">WhatsApp</a>
+    <a href="https://calendar.google.com/" class="btn">Google Calendar</a>
+  </section> -->
+
+  <!-- Burbuja de WhatsApp -->
+  <div class="whatsapp-bubble" id="whatsappBubble">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    <span class="whatsapp-tooltip">¿En qué te puedo ayudar?</span>
+  </div>
+
+  <!-- Footer 
+  <footer class="seccion-scroll">
+    <p>&copy; 2025 BOU - Todos los derechos reservados</p>
+  </footer> -->
+
+  <!-- FOOTER -->
+  <footer class="seccion-scroll footer">
+    <div class="footer-content">
+    <!-- Mapa -->
+      <div class="footer-map" data-aos="fade-down">
+        <h3>Ubicación</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=TU_LINK_DE_GOOGLE_MAPS"
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Contacto -->
+      <div class="footer-contact" data-aos="fade-in">
+        <h3>Contáctanos</h3>
+        <p>Email: <a href="mailto:info@tuservicio.com">info@tuservicio.com</a></p>
+        <p>Teléfono: <a href="tel:+5215555555555">+52 1 555 555 5555</a></p>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="footer-social" data-aos="fade-in">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"><img src="img/logos/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="img/logos/instagram.png" alt="Instagram"></a>
+          <a href="https://twitter.com/" target="_blank"><img src="img/logos/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 Bourbontrc. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+
+    window.addEventListener("load", () => {
+      document.querySelector(".loader-wrapper").classList.add("fade-out");
+    });
+
+    const secciones = document.querySelectorAll(".seccion-scroll");
+    let currentIndex = 0;
+
+    function scrollToSection(index) {
+      if (index >= 0 && index < secciones.length) {
+        currentIndex = index;
+        window.scrollTo({
+          top: secciones[currentIndex].offsetTop,
+          behavior: "smooth"
+        });
+      }
+    }
+
+    // Scroll con rueda (PC)
+    let scrollTimeout;
+    window.addEventListener("wheel", (e) => {
+      if (scrollTimeout) return;
+      const direction = e.deltaY > 0 ? 1 : -1;
+      scrollToSection(currentIndex + direction);
+      scrollTimeout = setTimeout(() => scrollTimeout = null, 800);
+    }, { passive: false });
+
+    // Scroll con touch (móviles)
+    let startY = 0;
+    window.addEventListener("touchstart", (e) => {
+      startY = e.touches[0].clientY;
+    });
+
+    window.addEventListener("touchend", (e) => {
+      let endY = e.changedTouches[0].clientY;
+      let diff = startY - endY;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) scrollToSection(currentIndex + 1);
+        else scrollToSection(currentIndex - 1);
+      }
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1 } // Se activa cuando al menos el 10% de la sección es visible
+    );
+
+    // Añadir todas las secciones con clase .reveal
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const images = [
+      'img/copas.jpg',
+      'img/bar.jpg',
+      'img/prep.jpg',
+      'img/shots2.jpg'
+    ];
+
+    let currentIndexGal = 0;
+    const mainImage = document.getElementById('mainImage');
+    const thumbnailElements = document.querySelectorAll('.thumbnails img');
+
+    function showImage(index) {
+      currentIndexGal = index;
+      mainImage.src = images[index];
+      thumbnailElements.forEach((thumb, i) => {
+        thumb.classList.toggle('active', i === index);
+      });
+    }
+
+    thumbnailElements.forEach((thumb) => {
+      thumb.addEventListener('click', (e) => {
+        const index = parseInt(thumb.dataset.index);
+        showImage(index);
+      });
+    });
+
+    // Cambio automático cada 4 segundos
+    setInterval(() => {
+      currentIndexGal = (currentIndexGal + 1) % images.length;
+      showImage(currentIndexGal);
+    }, 4000);
+
+    // Inicializa
+    showImage(0);
+
+    //Buble Whatsapp
+    // Cambia este número por tu teléfono (incluye prefijo país) y tu mensaje
+    const telefono = '5215555555555';
+    const mensaje = encodeURIComponent('Hola, necesito más información sobre el servicio.');
+
+    document.getElementById('whatsappBubble').addEventListener('click', function() {
+      window.open(`https://wa.me/${telefono}?text=${mensaje}`, '_blank');
+    });
+  </script>
+</body>
+</html>
