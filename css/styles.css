@@ -267,7 +267,7 @@ html, body {
 
     /*Calendario y precios*/
     #precios {
-      padding: 10px 20px;
+      padding: 5px 20px;
     }
 
     .precios-cards-content {
@@ -294,7 +294,7 @@ html, body {
     .card {
       flex: 1 1 300px;
       background-color: #222;
-      padding: 30px 20px;
+      padding: 15px 20px;
       border-radius: 12px;
       text-align: center;
       transition: transform 0.3s, box-shadow 0.3s;
@@ -518,13 +518,12 @@ html, body {
     font-size: 1.2rem;
   }
   .servicio {
+    position: relative;
+    top: -80px;
     flex-direction: column;
+    gap: 10px;
   }
 
-  .seccion-scroll {
-    padding: 5px 15px; /* Aún menos para mobile */
-  }
-  
   /* Sección Nosotros */
   #nosotros .nosotros-content {
     flex-direction: column;
@@ -559,6 +558,10 @@ html, body {
   }
 
   /* Sección Precios */
+  .precios-cards-content{
+    position: relative;
+    top: -90px;
+  }
   #precios .cards-grid {
     flex-direction: column;
     align-items: center;
@@ -617,6 +620,10 @@ html, body {
   }
 
   /* Sección Disponibilidad */
+  .disponibilidad-content {
+    position: relative;
+    top: -150px;
+  }
   .disponibilidad-content h2 {
     font-size: 1.8rem;
   }
@@ -634,7 +641,7 @@ html, body {
 
   .fullscreen-gallery .main-image-container {
     height: auto;
-    max-height: 80vh;
+    max-height: 30vh;
   }
 
   .fullscreen-gallery .main-image-container img {
