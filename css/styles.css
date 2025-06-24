@@ -506,9 +506,9 @@ html, body {
     visibility: visible;
   }
 
-  /* =========================
-  AJUSTES PARA NOSOTROS Y PRECIOS EN MOBILE
-========================== */
+/* ==================================================
+   AJUSTES GENERALES PARA DISPOSITIVOS MÓVILES
+================================================== */
 @media (max-width: 768px) {
   /*seccion servicios*/
   .hero h1 {
@@ -521,17 +521,13 @@ html, body {
     flex-direction: column;
   }
   
-  /* GENERAL PARA SECCIONES FULL PAGE EN MOBILE */
-  .seccion-scroll {
-    padding: 0px 10px;
-  }
-
-  /* SECCIÓN NOSOTROS */
+  /* Sección Nosotros */
   #nosotros .nosotros-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    text-align: center;
   }
 
   #nosotros .nosotros-text h2 {
@@ -545,17 +541,20 @@ html, body {
   }
 
   #nosotros .nosotros-image {
-    order: -1; /* Mueve la imagen ARRIBA en mobile */
+    order: -1;
     flex: unset;
+    padding: 0;
+    margin: 0 auto 15px auto;
   }
 
   #nosotros .nosotros-image img {
-    max-height: 35vh;
+    max-height: 40vh;
+    height: auto;
     object-fit: contain;
     border-radius: 12px;
   }
 
-  /* SECCIÓN PRECIOS */
+  /* Sección Precios */
   #precios .cards-grid {
     flex-direction: column;
     align-items: center;
@@ -581,26 +580,20 @@ html, body {
     font-size: 1rem;
   }
 
-  /*Galeria*/
-  /* Imagen principal a pantalla completa */
-  .gallery-header {
-    font-size: 1.8rem;
-  }
-
+  /* Sección Galería */
   .fullscreen-gallery .main-image-container {
     flex: 1;
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 100vh;
   }
 
   .fullscreen-gallery .main-image-container img {
     width: 100%;
-    height: 100%;           /* Ahora ocupa toda la altura */
-    object-fit: cover;       /* Se adapta para llenar toda la pantalla */
+    height: 100%;
+    object-fit: cover;
   }
 
-  /* Miniaturas al fondo de la pantalla */
   .fullscreen-gallery .thumbnails {
     position: absolute;
     bottom: 20px;
@@ -619,10 +612,30 @@ html, body {
     border-radius: 5px;
   }
 
-  /*Disponibilidad*/
+  /* Sección Disponibilidad */
   .disponibilidad-content h2 {
     font-size: 1.8rem;
   }
+}
 
+/* ==================================================
+   AJUSTES PARA DISPOSITIVOS ALARGADOS (EJ. IPHONE 15)
+================================================== */
+@media (max-width: 768px) and (min-height: 800px) {
+  #nosotros .nosotros-image img {
+    max-height: 35vh;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .fullscreen-gallery .main-image-container {
+    height: auto;
+    max-height: 80vh;
+  }
+
+  .fullscreen-gallery .main-image-container img {
+    object-fit: contain;
+    height: auto;
+  }
 }
 
