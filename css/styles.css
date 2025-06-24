@@ -520,6 +520,10 @@ html, body {
   .servicio {
     flex-direction: column;
   }
+
+  .seccion-scroll {
+    padding: 5px 15px; /* Aún menos para mobile */
+  }
   
   /* Sección Nosotros */
   #nosotros .nosotros-content {
