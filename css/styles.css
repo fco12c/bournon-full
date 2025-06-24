@@ -588,10 +588,13 @@ html, body {
   }
 
   /* Sección Galería */
+  .fullscreen-gallery {
+    top: -40px;
+  }
   .fullscreen-gallery .main-image-container {
     flex: 1;
     position: relative;
-    width: 100%;
+    width: 75%;
     height: 100vh;
   }
 
@@ -603,7 +606,7 @@ html, body {
 
   .fullscreen-gallery .thumbnails {
     position: absolute;
-    bottom: 20px;
+    bottom: 115px;
     left: 0;
     right: 0;
     display: flex;
@@ -627,6 +630,9 @@ html, body {
   .disponibilidad-content h2 {
     font-size: 1.8rem;
   }
+  .footer {
+    padding: 40px 20px;
+  }
 }
 
 /* ==================================================
@@ -649,4 +655,3 @@ html, body {
     height: auto;
   }
 }
-
