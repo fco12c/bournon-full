@@ -510,45 +510,52 @@ html, body {
   AJUSTES PARA NOSOTROS Y PRECIOS EN MOBILE
 ========================== */
 @media (max-width: 768px) {
-   /* Sección scroll sigue siendo full page */
+  /*seccion servicios*/
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .servicio {
+    flex-direction: column;
+  }
+  
+  /* GENERAL PARA SECCIONES FULL PAGE EN MOBILE */
   .seccion-scroll {
-    height: 100vh;
-    padding: 20px;
-    justify-content: center;
+    padding: 0px 10px;
   }
 
-  /* Texto general para mobile */
-  .seccion-scroll h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-  }
-
-  .seccion-scroll p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  /* AJUSTE PARA SECCIÓN NOSOTROS */
+  /* SECCIÓN NOSOTROS */
   #nosotros .nosotros-content {
-    flex-direction: column !important;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 15px;
+  }
+
+  #nosotros .nosotros-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  #nosotros .nosotros-text p {
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
 
   #nosotros .nosotros-image {
-    order: -1;
+    order: -1; /* Mueve la imagen ARRIBA en mobile */
     flex: unset;
-    margin-bottom: 15px;
   }
 
   #nosotros .nosotros-image img {
     max-height: 35vh;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 12px;
   }
 
-  /* AJUSTE PARA SECCIÓN DE PRECIOS */
+  /* SECCIÓN PRECIOS */
   #precios .cards-grid {
     flex-direction: column;
     align-items: center;
@@ -558,29 +565,63 @@ html, body {
 
   #precios .card {
     flex: unset;
-    width: 90%;           /* Ocupa casi toda la pantalla */
+    width: 90%;
     padding: 15px;
   }
 
   #precios .card h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   #precios .card p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   #precios .card .price {
     font-size: 1rem;
   }
 
-  /* AJUSTE GENERAL DE CONTENEDORES EN MOBILE */
-  .nosotros-content,
-  .cards-grid {
-    flex: unset;
+  /*Galeria*/
+  /* Imagen principal a pantalla completa */
+  .gallery-header {
+    font-size: 1.8rem;
+  }
+
+  .fullscreen-gallery .main-image-container {
+    flex: 1;
+    position: relative;
+    width: 90%;
+    height: 100vh;
+  }
+
+  .fullscreen-gallery .main-image-container img {
     width: 100%;
-    max-width: 100%;
-    text-align: center;
+    height: 100%;           /* Ahora ocupa toda la altura */
+    object-fit: cover;       /* Se adapta para llenar toda la pantalla */
+  }
+
+  /* Miniaturas al fondo de la pantalla */
+  .fullscreen-gallery .thumbnails {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .fullscreen-gallery .thumbnails img {
+    height: 60px;
+    border-radius: 5px;
+  }
+
+  /*Disponibilidad*/
+  .disponibilidad-content h2 {
+    font-size: 1.8rem;
   }
 
 }
